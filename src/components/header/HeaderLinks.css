@@ -1,0 +1,21 @@
+.header-menu {
+    display: flex;
+    align-items: center;
+  }
+  .header-menu a {
+    padding: 20px 30px;
+    margin-right: 8px;
+    text-decoration: none;
+    color: var(--inactive-color);
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+  }
+  @media screen and (max-width: 610px) {
+    .header-menu a:not(.main-header-link) {
+      display: none;
+    }
+  }
+  .header-menu a.is-active, .header-menu a:hover {
+    color: var(--theme-color);
+    border-bottom: 2px solid var(--theme-color);
+  }
