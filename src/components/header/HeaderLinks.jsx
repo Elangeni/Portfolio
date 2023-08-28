@@ -23,6 +23,12 @@ const HeaderLinks = ({ onMenuItemClick }) => {
       >
         Portfolio
       </a>
+      <a
+        className={`menu-link ${activeLink === 'Skills' ? 'is-active' : ''}`}
+        onClick={() => handleClick('Skills')}
+      >
+        Skills
+      </a>
     </div>
   )
 }
