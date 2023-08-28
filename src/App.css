@@ -81,3 +81,9 @@ div {
     padding: 0 16px;
   }
 }
+
+.finder {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
