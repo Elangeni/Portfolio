@@ -2,6 +2,8 @@ main {
     height: 100%;
     width: 20%;
     border-right: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
 }
 .content-button {
     background-color: #3a6df0;
@@ -9,8 +11,28 @@ main {
     padding: 8px 26px;
     color: #fff;
     border-radius: 20px;
-    margin-top: 16px;
+    margin: 16px auto 16px;
     cursor: pointer;
     transition: 0.3s;
     white-space: nowrap;
+  }
+
+  .menu-item {
+    padding: 20px 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--inactive-color);
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+  }
+
+  @media screen and (max-width: 610px) {
+    .menu-item div:not(.menu-item) {
+      display: none;
+    }
+  }
+  .menu-item.is-active, .menu div:hover {
+    color: var(--theme-color);
+    border-bottom: 2px solid var(--theme-color);
   }

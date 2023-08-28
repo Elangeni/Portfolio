@@ -1,7 +1,6 @@
 import './App.css';
 import SideMenu from './components/SideMenu/SideMenu';
 import About from './components/finder/About';
-import HeaderLinks from './components/header/HeaderLinks';
 import React, {useState} from 'react'
 
 const App  = () => {
@@ -16,11 +15,9 @@ const App  = () => {
       <div className='app'>
         <div class="header">
           <div class="menu-circle"></div>
-          <HeaderLinks onMenuItemClick={handleMenuItemClick}/>
-          {/* <img class="profile-img" src="" alt=""/> */}
         </div>
         <div className="finder">
-          <SideMenu />
+          <SideMenu onMenuItemClick={handleMenuItemClick}/>
           {selectedMenu === 'About' ? <About /> : <About />}
         </div>
       </div>
