@@ -3,10 +3,11 @@
   --border-color: rgba(113 119 144 / 25%);
   --theme-color: #f9fafb;
   --inactive-color: rgb(113 119 144 / 78%);
+  --table-color: rgba(190, 194, 211, 0.919);
   --body-font: "Poppins", sans-serif;
   --hover-menu-bg: rgba(12 15 25 / 30%);
   --content-title-color: #999ba5;
-  --content-bg: rgb(146 151 179 / 13%);
+  --content-bg: rgba(190, 191, 196, 0.962);
   --button-inactive: rgb(249 250 251 / 55%);
   --dropdown-bg: #21242d;
   --dropdown-hover: rgb(42 46 60);
@@ -84,4 +85,12 @@ div {
   display: flex;
   flex-direction: row;
   height: 100%;
+  .menu {
+    width: 20%;
+  }
+  .container {
+    width: 80%;
+    padding: 24px;
+    color: var(--theme-color);
+  }
 }

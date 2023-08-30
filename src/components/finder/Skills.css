@@ -1,0 +1,29 @@
+.container {
+  overflow: scroll;
+}
+
+.skills {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--theme-bg-color);
+    border-radius: 6px;
+    padding: 16px;
+    color: var(--theme-color);
+    margin: 20px auto;
+}
+
+.skill-item {
+    line-height: 2;
+    border-bottom: 1px solid var(--theme-color);
+    display: flex;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.skill-svg {
+    margin-right: 8px;
+    margin-top: auto
+}
