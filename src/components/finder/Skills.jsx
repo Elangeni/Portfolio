@@ -7,6 +7,7 @@ import SQLSvg from '../svgs/SQLSvg'
 import ReactSvg from '../svgs/ReactSvg'
 import VueJsSvg from '../svgs/VueJsSvg'
 import DjangoSvg from '../svgs/DjangoSvg'
+import FirebaseSvg from '../svgs/FirebaseSvg'
 
 const Skills = () => {
     return (
@@ -15,53 +16,63 @@ const Skills = () => {
                 Skills
             </h1>
             <p className="subheading">
-                I can juggle two oranges, bake amazing brownies, and have one three chicken wing eating 
+                I can juggle two oranges, bake amazing brownies, and have one three chicken wing eating
                 competitions in one night. Some may say I am a haver of many skills. If I were to list them,
-                we would run out of time and space. So instead, I will list the languages and framworks that I 
+                we would run out of time and space. So instead, I will list the languages and framworks that I
                 am most comfortable with.
             </p>
             <div className="skills">
-                <div className='skill-item'>
-                    <div className="skill-svg">
-                        <PythonSvg />
+                <div className="column">
+                    <div className='skill-item'>
+                        <div className="skill-svg">
+                            <VueJsSvg />
+                        </div>
+                        <p>Vue.js</p>
                     </div>
-                    <p>Python</p>
+                    <div className='skill-item'>
+                        <div className="skill-svg">
+                            <ReactSvg />
+                        </div>
+                        <p>React.js</p>
+                    </div>
+                    <div className='skill-item'>
+                        <div className="skill-svg">
+                            <TypescriptSvg />
+                        </div>
+                        <p>Typescript</p>
+                    </div>
+                    <div className='skill-item'>
+                        <div className="skill-svg">
+                            <FirebaseSvg />
+                        </div>
+                        <p>Firebase</p>
+                    </div>
                 </div>
-                <div className="skill-item">
-                    <div className='skill-svg'>
-                        <DjangoSvg />
+                <div className="column">
+                    <div className='skill-item'>
+                        <div className="skill-svg">
+                            <PythonSvg />
+                        </div>
+                        <p>Python</p>
                     </div>
-                    <p>Django</p>
-                </div>
-                <div className='skill-item'>
-                    <div className="skill-svg">
-                        <VueJsSvg />
+                    <div className="skill-item">
+                        <div className='skill-svg'>
+                            <DjangoSvg />
+                        </div>
+                        <p>Django</p>
                     </div>
-                    <p>Vue.js</p>
-                </div>
-                <div className='skill-item'>
-                    <div className="skill-svg">
-                        <ReactSvg />
+                    <div className='skill-item'>
+                        <div className="skill-svg">
+                            <NodeJsSvg />
+                        </div>
+                        <p>Node.js</p>
                     </div>
-                    <p>React.js</p>
-                </div>
-                <div className='skill-item'>
-                    <div className="skill-svg">
-                        <TypescriptSvg />
+                    <div className='skill-item'>
+                        <div className="skill-svg">
+                            <SQLSvg />
+                        </div>
+                        <p>SQL</p>
                     </div>
-                    <p>Typescript</p>
-                </div>
-                <div className='skill-item'>
-                    <div className="skill-svg">
-                        <NodeJsSvg />
-                    </div>
-                    <p>Node.js</p>
-                </div>
-                <div className='skill-item'>
-                    <div className="skill-svg">
-                        <SQLSvg />
-                    </div>
-                    <p>SQL</p>
                 </div>
             </div>
         </div>

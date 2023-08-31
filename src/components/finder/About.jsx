@@ -19,8 +19,6 @@ const About = () => {
                     Let's connect! I'm always excited to collaborate and share insights. Feel free to browse my portfolio, get in touch, 
                     or view my resume for a more comprehensive look at my journey and expertise.
                     Let's create, innovate, and build the future, one line of code at a time.
-
-
                 </p>
             </div>
         </div>

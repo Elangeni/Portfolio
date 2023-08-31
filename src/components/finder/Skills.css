@@ -5,12 +5,15 @@
 .skills {
     width: 80%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: var(--theme-bg-color);
     border-radius: 6px;
     padding: 16px;
     color: var(--theme-color);
     margin: 20px auto;
+}
+.column {
+    width: 50%;
 }
 
 .skill-item {
